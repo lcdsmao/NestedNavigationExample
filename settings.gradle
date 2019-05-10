@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':modulea', ':moduleb', ':modulec', ':core'
 rootProject.name='NestedNavigationExample'
