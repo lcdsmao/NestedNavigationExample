@@ -18,6 +18,9 @@
         <action
             android:id="@+id/action_moduleBOneFragment_to_moduleC"
             app:destination="@id/navGraphModuleC" />
+        <argument
+            android:name="message"
+            app:argType="string"/>
     </fragment>
     <fragment
         android:id="@+id/moduleBTwoFragment"

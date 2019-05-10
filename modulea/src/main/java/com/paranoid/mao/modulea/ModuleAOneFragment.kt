@@ -20,7 +20,9 @@ class ModuleAOneFragment : Fragment() {
             }
             findViewById<Button>(R.id.nav_module_b).setOnClickListener {
                 findNavController().navigate(
-                        ModuleAOneFragmentDirections.actionModuleAOneFragmentToModuleB()
+                        ModuleAOneFragmentDirections.actionModuleAOneFragmentToModuleB(
+                                "Navigate from module A to module B"
+                        )
                 )
             }
             findViewById<Button>(R.id.nav_module_c).setOnClickListener {

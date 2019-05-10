@@ -17,7 +17,11 @@
             app:destination="@id/moduleATwoFragment" />
         <action
             android:id="@+id/action_moduleAOneFragment_to_moduleB"
-            app:destination="@id/navGraphModuleB"/>
+            app:destination="@id/navGraphModuleB">
+            <argument
+                android:name="message"
+                app:argType="string"/>
+        </action>
         <action
             android:id="@+id/action_moduleAOneFragment_to_moduleC"
             app:destination="@id/navGraphModuleC"/>

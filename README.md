@@ -14,4 +14,4 @@ We only need one `NavHostFragment` at app module and each module doesn't need to
 
 ![Graph](./media/graph.png)
 
-![Demo](./media/record.gif)
+<img src="./media/record.gif" width="360"/>

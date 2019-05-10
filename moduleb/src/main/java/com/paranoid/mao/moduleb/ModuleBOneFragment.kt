@@ -6,9 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 
 class ModuleBOneFragment : Fragment() {
+
+    private val args by navArgs<ModuleBOneFragmentArgs>()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -24,5 +28,10 @@ class ModuleBOneFragment : Fragment() {
                 )
             }
         }
+    }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        Toast.makeText(context, "Test Args: ${args.message}", Toast.LENGTH_SHORT).show()
     }
 }
