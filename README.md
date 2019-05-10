@@ -11,3 +11,7 @@ We only need one `NavHostFragment` at app module and each module doesn't need to
 [na]: ./modulea/src/main/res/navigation/nav_graph_module_a.xml
 [nb]: ./moduleb/src/main/res/navigation/nav_graph_module_b.xml
 [nc]: ./modulec/src/main/res/navigation/nav_graph_module_c.xml
+
+![Graph](./media/graph.png)
+
+![Demo](./media/record.gif)
