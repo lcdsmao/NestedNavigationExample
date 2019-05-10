@@ -19,5 +19,6 @@
     <fragment
         android:id="@+id/moduleCTwoFragment"
         android:name="com.paranoid.mao.modulec.ModuleCTwoFragment"
-        android:label="ModuleCTwoFragment" />
+        android:label="ModuleCTwoFragment"
+        tools:layout="@layout/fragment_module_c_two"/>
 </navigation>

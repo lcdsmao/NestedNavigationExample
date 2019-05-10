@@ -10,7 +10,8 @@
     <fragment
         android:id="@+id/moduleBOneFragment"
         android:name="com.paranoid.mao.moduleb.ModuleBOneFragment"
-        android:label="ModuleBOneFragment" >
+        android:label="ModuleBOneFragment"
+        tools:layout="@layout/fragment_module_b_one">
         <action
             android:id="@+id/action_moduleBOneFragment_to_moduleBTwoFragment"
             app:destination="@id/moduleBTwoFragment" />
@@ -21,7 +22,8 @@
     <fragment
         android:id="@+id/moduleBTwoFragment"
         android:name="com.paranoid.mao.moduleb.ModuleBTwoFragment"
-        android:label="ModuleBTwoFragment" />
+        android:label="ModuleBTwoFragment"
+        tools:layout="@layout/fragment_module_b_two"/>
 
     <include app:graph="@navigation/nav_graph_module_c"/>
 </navigation>

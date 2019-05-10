@@ -10,7 +10,8 @@
     <fragment
         android:id="@+id/moduleAOneFragment"
         android:name="com.paranoid.mao.modulea.ModuleAOneFragment"
-        android:label="ModuleAOneFragment" >
+        android:label="ModuleAOneFragment"
+        tools:layout="@layout/fragment_module_a_one">
         <action
             android:id="@+id/action_moduleAOneFragment_to_moduleATwoFragment"
             app:destination="@id/moduleATwoFragment" />
@@ -24,7 +25,8 @@
     <fragment
         android:id="@+id/moduleATwoFragment"
         android:name="com.paranoid.mao.modulea.ModuleATwoFragment"
-        android:label="ModuleATwoFragment" />
+        android:label="ModuleATwoFragment"
+        tools:layout="@layout/fragment_module_a_two"/>
 
     <include app:graph="@navigation/nav_graph_module_b"/>
 
