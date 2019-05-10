@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navGraphModuleA"
+    app:startDestination="@id/moduleAOneFragment"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/moduleAOneFragment"
+        android:name="com.paranoid.mao.modulea.ModuleAOneFragment"
+        android:label="ModuleAOneFragment" >
+        <action
+            android:id="@+id/action_moduleAOneFragment_to_moduleATwoFragment"
+            app:destination="@id/moduleATwoFragment" />
+        <action
+            android:id="@+id/action_moduleAOneFragment_to_moduleB"
+            app:destination="@id/navGraphModuleB"/>
+        <action
+            android:id="@+id/action_moduleAOneFragment_to_moduleC"
+            app:destination="@id/navGraphModuleC"/>
+    </fragment>
+    <fragment
+        android:id="@+id/moduleATwoFragment"
+        android:name="com.paranoid.mao.modulea.ModuleATwoFragment"
+        android:label="ModuleATwoFragment" />
+
+    <include app:graph="@navigation/nav_graph_module_b"/>
+
+    <include app:graph="@navigation/nav_graph_module_c"/>
+</navigation>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navGraphModuleC"
+    app:startDestination="@id/moduleCOneFragment"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/moduleCOneFragment"
+        android:name="com.paranoid.mao.modulec.ModuleCOneFragment"
+        android:label="fragment_module_c_one"
+        tools:layout="@layout/fragment_module_c_one" >
+        <action
+            android:id="@+id/action_moduleCOneFragment_to_moduleCTwoFragment"
+            app:destination="@id/moduleCTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moduleCTwoFragment"
+        android:name="com.paranoid.mao.modulec.ModuleCTwoFragment"
+        android:label="ModuleCTwoFragment" />
+</navigation>
